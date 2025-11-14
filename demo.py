@@ -11,7 +11,7 @@ from haystack.core.component import Component
 from haystack import Document
 from haystack import component, default_to_dict, default_from_dict
 from tqdm import tqdm 
-import openai
+import OpenAI
 
 import knowledge_base
 from sentence_transformers import SentenceTransformer
@@ -44,7 +44,8 @@ st.set_page_config(
 @st.cache_resource
 def init():
     # OpenAI client
-    client = openai.OpenAI(api_key = openai_key)
+    # client = openai.OpenAI(api_key = openai_key)
+    client =OpenAI(api_key = openai_key)
 
     
 
