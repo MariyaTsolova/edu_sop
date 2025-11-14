@@ -2,7 +2,7 @@ import streamlit as st
 from random import randrange
 import pandas as pd
 import json
-import openai
+# import openai
 import os
 import chromadb
 import time
